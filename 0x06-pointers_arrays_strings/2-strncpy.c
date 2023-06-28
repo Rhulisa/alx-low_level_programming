@@ -6,16 +6,12 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int lenString, a;
-	lenString = 0;
-	while (dest[lenString] != '\0')
-		        {
-				                lenString++;
-						        }
-	        for (a = 0; a < n && src[a] != '\0'; a++, lenString++)
-			        {
-					                dest[lenString] = src[a];
-							        }
-		        dest[lenString] = '\0';
+	int count;
+
+	        for (count = 0; count < n && src[count] != '\0'; count++)
+			        
+					                dest[count] = src[count];
+		for (; count < n; count++)
+		        dest[count] = '\0';
 			        return(dest);
 }
