@@ -7,15 +7,15 @@
 
 int main(void)
 {
-	char 'c';
+		        char apl[26] = "abcdefghijklmnopqrstuvwxyz";
+					int i;
 
-	c = 'a';
-	while
-	       	(c <= 'z'){
-		putchar(c);
-		c++;
-	}
-	putchar("\n");
-	return(0);
+					        for(i = 0; i < 26; i++)        
+									{
+										                putchar(alp[i]);
+												                }
+						        
+						        putchar("\n");
+							        return(0);
 }
 
