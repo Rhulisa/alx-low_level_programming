@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include <ctype.h>
 /**
  * *main - Entry point
  * *Return: Always return 0 (success)
@@ -7,15 +7,14 @@
 
 int main(void)
 {
-		        char apl[26] = "abcdefghijklmnopqrstuvwxyz";
-					int i;
+int lowCase = 'a';
 
-					        for(i = 0; i < 26; i++)        
-									{
-										                putchar(alp[i]);
-												                }
-						        
-						        putchar("\n");
-							        return(0);
+        while (lowCase <= 'z')        
+				{
+					                putchar(lowCase);
+							lowCase += 1;
+							                }
+	        
+	        putchar('\n');
+		        return(0);
 }
-
